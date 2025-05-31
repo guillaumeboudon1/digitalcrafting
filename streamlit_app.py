@@ -5,16 +5,14 @@ st.set_page_config(
     page_icon="📈",
 )
 
-from modules.nav import Navbar
-
-
 def main():
-    Navbar()
+    with st.sidebar:
+        st.page_link('streamlit_app.py', label='Individual Checker', icon='🔥')
+        st.page_link('pages/competition.py', label='Competition Checker', icon='🛡️')
 
-    st.title(f'🛡️ Competition Checker')
+st.title("My Dashboard")    
+
 
 
 if __name__ == '__main__':
     main()
-
-st.title("My Dashboard")     
