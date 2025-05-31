@@ -26,7 +26,7 @@ components.html("""
     "NZD",
     "CNY"
   ],
-  "isTransparent": false,
+  "isTransparent": true,
   "colorTheme": "dark",
   "locale": "en",
   "backgroundColor": "#1D222D"
@@ -60,7 +60,7 @@ components.html("""
     "NZD",
     "CNY"
   ],
-  "isTransparent": false,
+  "isTransparent": true,
   "colorTheme": "dark",
   "locale": "en",
   "backgroundColor": "#000000"

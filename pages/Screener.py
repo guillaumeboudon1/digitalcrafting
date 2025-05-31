@@ -3,10 +3,9 @@ import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")  # Full-width layout
 
-st.title("Forex")
+st.title("Screener")
 
 # FULL WIDTH - FOREX HEATMAP
-st.header("Forex heatmap")
 components.html("""
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -17,7 +16,7 @@ components.html("""
   "height": "800",
   "defaultColumn": "overview",
   "defaultScreen": "general",
-  "market": "forex",
+  "market": "america",
   "showToolbar": true,
   "colorTheme": "dark",
   "locale": "en"

@@ -52,7 +52,7 @@ def _toggle_theme():
 # ──────────────────────────────────────────────────────────────────────────────
 col_title, col_toggle = st.columns([9, 1])
 with col_title:
-    st.title("Trading Dashboard")
+    st.title("Analysis")
 with col_toggle:
     # Black & white Unicode glyphs:
     #   ☾ (U+263D) = First Quarter Moon (outline)
@@ -66,7 +66,7 @@ theme = "dark" if st.session_state.dark_mode else "light"
 # 6. SYMBOL INPUT
 # ──────────────────────────────────────────────────────────────────────────────
 symbol = st.text_input(
-    "Enter a TradingView symbol (e.g. NASDAQ:AAPL, FX:EURUSD, etc.)",
+    "Enter a ticker symbol (e.g. NASDAQ:AAPL, FX:EURUSD, etc.)",
     value="NASDAQ:AAPL"
 )
 
@@ -88,7 +88,7 @@ components.html(
           "height": 300,
           "locale": "en",
           "colorTheme": "{theme}",
-          "isTransparent": false,
+          "isTransparent": true,
           "width": "100%"
         }}
         </script>
@@ -155,7 +155,7 @@ with col1:
               "height": "500",
               "locale": "en",
               "colorTheme": "{theme}",
-              "isTransparent": false
+              "isTransparent": true
             }}
             </script>
           </div>
@@ -186,7 +186,7 @@ with col2:
               "displayMode": "single",
               "locale": "en",
               "colorTheme": "{theme}",
-              "isTransparent": false
+              "isTransparent": true
             }}
             </script>
           </div>
@@ -211,7 +211,7 @@ components.html(
                 src="https://s3.tradingview.com/external-embedding/embed-widget-financials.js"
                 async>
         {{
-          "isTransparent": false,
+          "isTransparent": true,
           "largeChartUrl": "",
           "displayMode": "regular",
           "width": "100%",
