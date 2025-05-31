@@ -1,2 +1,5 @@
 [client]
-showSidebarNavigation = false
+toolbarMode = "minimal"    # Hide all built-in toolbar items unless explicitly set via st.set_page_config :contentReference[oaicite:0]{index=0}
+
+[ui]
+hideTopBar = true         # Remove the entire top bar (including the running/stop buttons and hamburger menu) :contentReference[oaicite:1]{index=1}
